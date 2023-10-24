@@ -1,0 +1,84 @@
+/* .wp-block-post-title {
+    display: none;
+} */
+
+:root {
+    --Red-5: #FCF4F4;
+    --Red: #C2252C;
+}
+
+/* CF 7 */
+body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    margin-left: 84px !important;
+    margin-right: 84px !important;
+}
+
+body .wpcf7-form .wpcf7-form-control-wrap {
+    margin-top: 16px;
+}
+
+.newsletter-form {
+    padding: 40px;
+    width: 915px;
+    display: flex;
+    gap: 70px;
+    background: var(--Red-5);
+}
+
+.newsletter-form br {
+    display: none;
+}
+
+.left-form {
+
+}
+
+.form-title {
+    /* Poppins 48 Bold */
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    /* 57.6px */
+}
+
+.form-subtitle {
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Header description mobile 16 Regular */
+    font-size: 16px;
+    line-height: 126%;
+    /* 20.16px */
+}
+
+ .newsletter-form .right-form .form-fields .email-label {
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Poppins 16 medium */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 126%;
+    /* 20.16px */
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Poppins 16 medium */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 126%;
+    /* 20.16px */
+}
+
+.email-field {
+    border-radius: 10px;
+}
+
+.sub-btn {
+    display: inline-flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--Red);
+    /* Button shadow */
+    box-shadow: 10px 10px 0px 0px #F3D3D5;
+    /* Button label */
+    font-size: 20px;
+    line-height: 150%;
+    /* 30px */
+}
