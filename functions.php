@@ -34,7 +34,8 @@ add_action('wp_enqueue_scripts', 'remove_cf7_styles');
 
 function enqueue_custom_styles()
 {
-    wp_enqueue_style('custom-styles', get_stylesheet_directory_uri() . '/components/newsletter.css');
+    wp_enqueue_style('newsletter', get_stylesheet_directory_uri() . '/components/newsletter.css');
+    wp_enqueue_style('product', get_stylesheet_directory_uri() . '/components/product.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 
