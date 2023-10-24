@@ -26,13 +26,6 @@ add_action('wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10);
 
 // END ENQUEUE PARENT ACTION
 
-function load_custom_fonts()
-{
-    // Подключаем шрифт Poppins
-    wp_enqueue_style('poppins-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-}
-add_action('wp_enqueue_scripts', 'load_custom_fonts');
-
 function remove_cf7_styles()
 {
     wp_dequeue_style('contact-form-7');
@@ -44,3 +37,9 @@ function enqueue_custom_styles()
     wp_enqueue_style('custom-styles', get_stylesheet_directory_uri() . '/components/newsletter.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
+
+function enqueue_child_theme_scripts()
+{
+    wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/js/script.js', array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_child_theme_scripts');
