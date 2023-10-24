@@ -1,0 +1,65 @@
+:root {
+    --Red-5: #FCF4F4;
+    --Red: #C2252C;
+    --Black: #1B1B1B;
+    --gray-100: #19191D;
+    --Black-50: #8D8D8D;
+}
+
+.woocommerce .product span.onsale {
+    display: none;
+}
+
+.woocommerce.single-product div.product p.price {
+    color: var(--Red) !important;
+}
+
+.woocommerce-loop-product__title {
+    color: var(--gray-100) !important;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 13px !important;
+    line-height: 160% !important;
+    /* 20.8px */
+}
+
+.price {
+    display: flex !important;
+    gap: 16px;
+    align-items: center;
+    color: var(--Red) !important;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 126%;
+    /* 22.68px */
+}
+
+.woocommerce ul.products li.product .price del {
+    color: var(--Black-50);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    line-height: 126%;
+    text-decoration-line: strikethrough;
+}
+
+.woocommerce ul.products li.product .price ins {
+    order: -1;
+}
+
+.cfvsw-swatches-container {
+    grid-gap: 4px;
+}
+
+.woocommerce table.variations tr {
+    margin-bottom: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.br_alabel.berocket_alabel_id_29>span b {
+    font-weight: 400;
+}
+
+.woocommerce ul.products li.product .button {
+    display: none;
+}
